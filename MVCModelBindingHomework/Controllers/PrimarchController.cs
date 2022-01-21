@@ -15,7 +15,15 @@ namespace MVCModelBindingHomework.Controllers
         [HttpPost]
         public IActionResult CreateWithModelBinding(Primarch p)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                // PrimarchDb.Add(p);  Primarch data would be added to database here
+
+                return RedirectToAction("Index", "Home");
+            }
+            // If model state isn't valid
+            // show the page, but with validation errors
+            return View(p);
         }
     }
 }
