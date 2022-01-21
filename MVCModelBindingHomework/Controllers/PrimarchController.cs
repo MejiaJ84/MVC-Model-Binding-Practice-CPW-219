@@ -11,5 +11,11 @@ namespace MVCModelBindingHomework.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult CreateWithModelBinding(Primarch p)
+        {
+            return View();
+        }
     }
 }

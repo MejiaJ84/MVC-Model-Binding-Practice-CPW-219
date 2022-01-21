@@ -5,22 +5,28 @@
 
 <h2>Add a Primarch</h2>
 
-<form>
+<form method="post">
 	<label asp-for="Name"></label>
 	<input asp-for="Name" />
 	<span asp-validation-for="Name"></span>
+	<br />
 
 	<label asp-for="LegionNumber"></label>
 	<input asp-for="LegionNumber" />
 	<span asp-validation-for="LegionNumber"></span>
+	<br />
 
 	<label asp-for="Legion"></label>
 	<input asp-for="Legion" />
 	<span asp-validation-for="Legion"></span>
+	<br />
 
 	<label asp-for="HomeWorld"></label>
 	<input asp-for="HomeWorld" />
 	<span asp-validation-for="HomeWorld"></span>
+	<br />
+
+	<input type="submit" value="Add Primarch" />
 
 
 </form>
