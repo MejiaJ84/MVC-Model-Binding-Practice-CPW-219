@@ -10,7 +10,7 @@
         /// <summary>
         /// Order in which the Primarch was created
         /// </summary>
-        public int PrimarchNumber { get; set; }
+        public int LegionNumber { get; set; }
 
         /// <summary>
         /// The legion that belongs to the Primarch
